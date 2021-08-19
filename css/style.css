@@ -1,0 +1,101 @@
+:root{
+    --prim: #131c29;
+    --sec: #ff8901;
+    --text: #596573;
+    --bgColor: #f4f4f6;
+    --buttonColor: #213349;
+    --headerFont: 'Oswald', sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+/* general rules */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:576px) and (max-width:776px) {
+    .main .button, .footer .button{
+        float: right;
+        margin: 10px 0px 20px 20px;
+    }
+}
+@media (min-width:786px) and (max-width:991px) {
+    .main-nav-item{
+        margin-top: 25px;
+    }
+}
+.button:hover{
+    color: black;
+    background-color: var(--sec);
+}
+/* Backgrounds */
+.top-header{
+    background-color: var(--prim);
+}
+.main-header{
+    background-color: var(--bgColor);
+}
+.main{
+    background-color: var(--bgColor);
+}
+.footer{
+    background-color: var(--buttonColor);
+}
+/* end of backgrounds */
+a{
+    color: white;
+}
+/* main */
+.logo{
+    margin: 10px 0;
+}
+.nav-item{
+    margin-bottom: 20px;
+}
+/* end of main */
+
+/* footer */
+.footer .sub-header{
+    color: white;
+}
+.footer .text{
+    color: var(--text);
+}
+.footer-div{
+    margin: 20px 0px;
+}
+.service-list{
+    list-style-image: url("../media/cog.png");
+}
+.oppurtunities-list{
+    list-style-image: url("../media/chat.png");
+}
+.colophon{
+    background-color: var(--prim);
+    color: var(--text);
+}
+.news-list{
+    list-style-type: none;
+}
+.date-div{
+    /* border: 1px solid red; */
+    width: 75px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.date-div1{
+
+    background: rgb(255,249,183);
+    background: linear-gradient(180deg, rgba(255,249,183,1) 0%, rgba(255,239,0,1) 35%);
+}
+.date-div2{
+    background: rgb(255,219,118);
+    background: linear-gradient(180deg, rgba(255,219,118,1) 0%, rgba(255,154,0,1) 35%);
+}
+.date-div3{
+    background: rgb(255,148,148);
+    background: linear-gradient(180deg, rgba(255,148,148,1) 0%, rgba(255,0,0,1) 35%);
+}
+
+/* end of footer */
