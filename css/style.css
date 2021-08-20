@@ -13,16 +13,119 @@ body {
     margin: 0;
     padding: 0;
 }
+.text{
+    font-family: var(--textFont);
+}
+.sub-header{
+    font-family: var(--headerFont);
+}
+.button{
+    font-family: var(--headerFont);
+}
 @media (min-width:576px) and (max-width:776px) {
     .main .button, .footer .button{
         float: right;
         margin: 10px 0px 20px 20px;
     }
 }
+@media (min-width:576px) and (max-width:776px) {
+    .service-list, .oppurtunities-list{
+        height: 150px;
+        /* line-height: 4; */
+    }
+}
+/* @media (min-width:576px) and (max-width:776px) {
+    .date-div{
+        display: inline-block;
+    }
+} */
 @media (min-width:786px) and (max-width:991px) {
     .main-nav-item{
         margin-top: 25px;
     }
+}
+@media (min-width:786px) and (max-width:991px) {
+    .content{
+        border: 1px solid silver;
+        padding: 0px 10px;
+    }  
+}
+@media (min-width:786px) and (max-width:991px) {
+    .service-list{
+        /* border: 1px solid red; */
+        /* line-height: 2.2; */
+        height: 629px;
+    }  
+}
+@media (min-width:786px) and (max-width:991px) {
+    .date-div{
+        margin-left: 24%;
+    }
+}
+/* @media (min-width:786px) and (max-width:991) {
+    footer .lit{
+        border: 1px solid red;
+        width:200px;
+        margin-left: 75px;
+    } */
+
+@media (min-width:788px) and (max-width: 1399px) {
+    .main-nav-item {
+        margin-top: 25px;
+    }
+}
+@media (min-width:788px) and (max-width: 1399px) {
+    .content{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:1400px) and (max-width: 1600px) {
+    .main-nav-item {
+        margin-top: 25px;
+    }
+}
+@media (min-width:1400px) and (max-width: 1600px) {
+    .content{
+        margin-bottom: 20px;
+    }
+}
+/* @media (min-width:788px) and (max-width:1400px) {
+    .service-list{
+        line-height: 2;
+    }  
+}
+@media (min-width:788px) and (max-width:1400px) {
+    .oppurtunities-list{
+        line-height: 2;
+    }  
+}
+@media (min-width:788px) and (max-width:1400px) {
+    .news-list{
+        line-height: 2;
+    }  
+} */
+@media (min-width:788px) and (max-width:1399px) {
+    .content{
+        border: 1px solid silver;
+        padding: 0px 10px;
+    }  
+}
+@media (min-width:788px) and (max-width:1800px) {
+    .date-div{
+        float: left;
+        margin-right: 5px;
+    }  
+}
+
+/* @media (min-width:788px) and (max-width:1140px) {
+    .news-text-footer p{
+        margin-left: 60px;
+    }  
+} */
+@media (min-width:788px) and (max-width:1140px) {
+    .news-text-footer h3{
+        font-size: 20px;
+    }  
 }
 .button:hover{
     color: black;
@@ -79,13 +182,38 @@ a{
 }
 .date-div{
     /* border: 1px solid red; */
-    width: 75px;
+    line-height: 1;
+    width: 100px;
+    height: 100px;
     text-align: center;
     color: white;
     border-radius: 10px;
+    font-size: calc(20px + 10 * ((100vw - 320px) / 680))
+}
+footer .sub-header{
+    font-size: calc(20px + 6 * ((100vw - 320px) / 680))
+}
+footer .text{
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
+}
+.service-list-item{
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+}
+.link-text{
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680))
+}
+.news-list .text{
+    font-size: calc(6px + 6 * ((100vw - 320px) / 680))
+}
+.service-list, .news-list, .oppurtunities-list{
+    height: 575px;
+}
+@media (min-width:576px) and (max-width:776px) {
+    .service-list, .news-list, .oppurtunities-list{
+        height: 400px;
+    }
 }
 .date-div1{
-
     background: rgb(255,249,183);
     background: linear-gradient(180deg, rgba(255,249,183,1) 0%, rgba(255,239,0,1) 35%);
 }
